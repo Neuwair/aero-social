@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AeroSocial</title>
+    <!-- Global Styles -->
+    <link
+      href="/shared/styles/global-essentials.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/shared/styles/global-inject-header.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Page-Specific Styles -->
+    <link
+      href="/shared/styles/global-inject-home.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Vendor Scripts -->
+    <script
+      src="https://kit.fontawesome.com/5288a7c752.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Auth & Global Utilities -->
+    <script
+      src="/shared/utils/auth/auth-client.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      src="/shared/utils/security/initializer-csrf.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      src="/shared/utils/auth/account-auth-initializer.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      src="/shared/utils/animations/dropdown-manager.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      src="/shared/javascript/global-inject-home.js"
+      type="module"
+      defer
+    ></script>
+    <!-- Global Components -->
+    <script
+      src="/shared/javascript/global-inject-header.js"
+      type="module"
+      defer
+    ></script>
+  </head>
+  <body data-page="index">
+    <div id="injectHeaderContainer"></div>
+    <main class="mainEssential">
+      <div id="injectHome"></div>
+    </main>
+  </body>
+</html>

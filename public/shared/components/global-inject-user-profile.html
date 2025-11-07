@@ -1,0 +1,132 @@
+<div class="profile-display">
+  <div class="first-box_wrapper">
+    <div class="first-box_container">
+      <div class="avatar-username_wrapper">
+        <div class="avatar-reflection">
+          <div class="avatar-inner-shadow"></div>
+          <img
+            class="user-avatar"
+            id="userAvatar"
+            src="#"
+            alt="Default Profile Picture"
+          />
+        </div>
+        <div id="usernameDisplayMain" class="username-storage"></div>
+      </div>
+      <div class="banner-only_container">
+        <img
+          class="user-banner"
+          id="userBanner"
+          src="#"
+          alt="Default Profile Banner"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="second-box_wrapper">
+    <div class="second-box_container">
+      <div class="bio-section_wrapper">
+        <div id="bioDisplay" class="bio-change_container">
+          <div class="bio-cancel_wrapper">
+            <nav class="bio-cancel_container">
+              <ul>
+                <li>
+                  <div class="bio-item_container">
+                    <div class="bio-reflection">
+                      <div class="bio-inner-light"></div>
+                      <button id="bioTrashCan" class="bio-item" type="button">
+                        <i class="fa-solid fa-x"></i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="bio-item_container">
+                    <div class="bio-reflection">
+                      <div class="bio-inner-light"></div>
+                      <button id="bioAccept" class="bio-item" type="button">
+                        <i class="fa-solid fa-check"></i>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="bio-write_textarea">
+            <textarea
+              id="bioTextArea"
+              placeholder="Tell us about yourself ..."
+              minlength="4"
+              maxlength="150"
+              autocomplete="off"
+            ></textarea>
+            <div class="emoji-picker_wrapper">
+              <div class="emoji-picker_container">
+                <i id="emojiBioBtn" class="fas fa-smile"></i>
+                <div id="emojiStorageBio" class="emoji_storage">
+                  <div class="emoji_wrapper"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bio-text_container">
+          <p id="bioStorage" class="bio-text-storage"></p>
+        </div>
+        <div class="bio-edit_wrapper">
+          <div class="bio-edit_icon">
+            <i id="bioEdit" class="fas fa-pen"></i>
+          </div>
+        </div>
+      </div>
+      <div class="people-data_wrapper">
+        <div class="people-data_container">
+          <ul>
+            <span id="friendsCounter" class="people-counter"></span>
+            <span id="followersCounter" class="people-counter"></span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="third-box_wrapper">
+    <div class="third-box_container">
+      <nav class="user-navigation">
+        <ul>
+          <li>
+            <div class="user-navigation_wrapper">
+              <div class="user-navigation-reflection">
+                <div class="user-navigation-inner-light"></div>
+                <button id="viewGalleryBtn" class="nav-item" type="button">
+                  View my gallery
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="gallery-display">
+    <div class="gallery-btns_wrapper">
+      <div class="user-navigation-reflection">
+        <div class="user-navigation-inner-light"></div>
+        <button id="leftBtn" class="gallery-btn">
+          <i class="fa fa-arrow-left"></i>
+        </button>
+      </div>
+      <div class="user-navigation-reflection">
+        <div class="user-navigation-inner-light"></div>
+        <button id="closeGalleryBtn" class="gallery-btn">Close gallery</button>
+      </div>
+      <div class="user-navigation-reflection">
+        <div class="user-navigation-inner-light"></div>
+        <button id="rightBtn" class="gallery-btn">
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="mediaStorageGallery"></div>
+    </div>
+  </div>
+</div>

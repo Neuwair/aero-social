@@ -1,0 +1,41 @@
+{
+  "name": "aero-social",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'",
+    "deploy": "netlify deploy",
+    "deploy:prod": "netlify deploy --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neuwair404/aero-social.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neuwair404/aero-social/issues"
+  },
+  "homepage": "https://github.com/Neuwair404/aero-social#readme",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "globals": "^16.3.0",
+    "netlify-cli": "^23.9.5",
+    "patch-package": "^8.0.1"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "@netlify/functions": "^4.2.1",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.1",
+    "jaro-winkler": "^0.2.8",
+    "naughty-words": "^1.2.0",
+    "node-fetch": "^3.3.2",
+    "profane-words": "^1.6.0"
+  }
+}

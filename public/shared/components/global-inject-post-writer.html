@@ -1,0 +1,101 @@
+<div class="writer-display">
+  <div class="first-box_wrapper-writer">
+    <div class="first-box_container-writer">
+      <div class="avatar-username_wrapper-writer">
+        <div class="avatar-reflection-writer">
+          <div class="avatar-inner-shadow-writer"></div>
+          <img
+            class="user-avatar-writer"
+            id="userWriterAvatar"
+            src="#"
+            alt="Default Profile Picture"
+          />
+        </div>
+        <div id="usernameDisplayWriter" class="username-storage-writer"></div>
+      </div>
+    </div>
+    <div class="text-area-only_container-writer">
+      <textarea
+        id="postTextArea"
+        placeholder="What's new? ..."
+        minlength="4"
+        maxlength="250"
+        autocomplete="off"
+      ></textarea>
+      <div class="emoji-picker_wrapper">
+        <div class="emoji-picker_container">
+          <i id="emojiWriterBtn" class="fas fa-smile"></i>
+          <div id="emojiStorageWriter" class="emoji_storage">
+            <div class="emoji_wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="third-box_wrapper-writer">
+    <div class="third-box_container-writer">
+      <nav class="user-navigation-writer">
+        <ul>
+          <li>
+            <div class="user-navigation_wrapper-writer">
+              <div class="user-navigation-reflection-writer">
+                <div class="user-navigation-inner-light-writer"></div>
+                <label class="nav-item-writer" for="uploadFile">
+                  <p class="upload-media-text-input">Upload Media</p>
+                  <input
+                    id="uploadFile"
+                    type="file"
+                    accept="image/*, video/*"
+                    style="display: none"
+                    multiple
+                  />
+                </label>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="user-navigation_wrapper-writer">
+              <div class="user-navigation-reflection-writer">
+                <div class="user-navigation-inner-light-writer"></div>
+                <button
+                  id="writerTrashCan"
+                  class="nav-item-writer"
+                  type="button"
+                >
+                  Cancel Post
+                </button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="user-navigation_wrapper-writer">
+              <div class="user-navigation-reflection-writer">
+                <div class="user-navigation-inner-light-writer"></div>
+                <button id="sendPost" class="nav-item-writer">POST</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Previewer -->
+  </div>
+  <div class="fourth-box_wrapper-writer">
+    <div class="media-preview_template">
+      <div class="media-preview_wrapper-writer">
+        <div class="media-preview_container-writer">
+          <div class="media-preview-trashcan-writer">
+            <div class="user-navigation-reflection-writer">
+              <div class="user-navigation-inner-light-writer"></div>
+              <button class="nav-item-writer mediaPreviewTrashcan">
+                Delete
+              </button>
+            </div>
+          </div>
+          <div class="mediaStorage"></div>
+        </div>
+      </div>
+    </div>
+    <div id="writerMediaTemplate"></div>
+  </div>
+</div>

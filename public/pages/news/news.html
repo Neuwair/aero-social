@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <!-- Global Styles -->
+    <link
+      href="/shared/styles/global-essentials.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/shared/styles/global-inject-header.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Page-Specific Styles -->
+    <link
+      href="/shared/styles/global-inject-news.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/shared/styles/global-inject-navigation.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Vendor Scripts -->
+    <script
+      src="https://kit.fontawesome.com/5288a7c752.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Auth & Global Utilities -->
+    <script
+      src="/shared/utils/animations/dropdown-manager.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      src="/shared/javascript/global-inject-news.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      src="/shared/javascript/global-inject-navigation.js"
+      type="module"
+      defer
+    ></script>
+    <script
+      src="/shared/utils/manager/friend-request/index.js"
+      type="module"
+      defer
+    ></script>
+    <script src="/shared/utils/api/api-news.js" type="module" defer></script>
+    <!-- Global Components -->
+    <script
+      src="/shared/javascript/global-inject-header.js"
+      type="module"
+      defer
+    ></script>
+  </head>
+  <body data-page="news">
+    <div id="injectHeaderContainer"></div>
+    <main class="mainEssential">
+      <div id="injectNavigationContainer"></div>
+      <div id="injectNews"></div>
+    </main>
+  </body>
+</html>

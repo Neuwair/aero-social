@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Explore</title>
+    <!-- Global Styles -->
+    <link
+      href="/shared/styles/global-essentials.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/shared/styles/global-inject-header.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Page-Specific Styles -->
+    <link
+      href="/shared/styles/global-inject-navigation.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/shared/styles/global-inject-user-profile.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/shared/styles/global-inject-post-writer.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/shared/styles/global-inject-emoji-picker.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/shared/styles/global-inject-post.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Vendor Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5288a7c752.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Auth & Global Utilities -->
+    <script
+      src="/shared/utils/security/initializer-csrf.js"
+      type="module"
+    ></script>
+    <script
+      type="module"
+      src="../../shared/javascript/global-inject-user-profile.js"
+    ></script>
+    <script
+      src="/shared/utils/auth/display-user-data.js"
+      type="module"
+    ></script>
+    <script
+      src="/shared/utils/animations/dropdown-manager.js"
+      type="module"
+    ></script>
+    <script src="/shared/utils/manager/manager-emoji.js" type="module"></script>
+    <script src="/shared/utils/manager/manager-media.js" type="module"></script>
+    <script
+      src="/shared/utils/upload/upload-avatar-banner.js"
+      type="module"
+    ></script>
+    <script
+      src="/shared/utils/manager/manager-biography.js"
+      type="module"
+    ></script>
+    <script src="/shared/utils/post/create-post.js" type="module"></script>
+    <script src="/shared/utils/api/api-gallery.js" type="module"></script>
+    <!-- Global Components -->
+    <script src="/shared/utils/auth/auth-client.js" type="module"></script>
+    <script
+      src="/shared/javascript/global-inject-header.js"
+      type="module"
+    ></script>
+    <script
+      src="/shared/javascript/global-inject-navigation.js"
+      type="module"
+    ></script>
+    <script
+      src="/shared/javascript/global-inject-user-profile.js"
+      type="module"
+    ></script>
+    <script
+      src="/shared/javascript/global-inject-post-writer.js"
+      type="module"
+    ></script>
+    <script
+      src="/shared/javascript/global-inject-post.js"
+      type="module"
+    ></script>
+    <script
+      src="/shared/utils/manager/friend-request/index.js"
+      type="module"
+    ></script>
+  </head>
+  <body data-page="explore">
+    <div id="injectHeaderContainer"></div>
+    <main class="mainEssential">
+      <div id="injectNavigationContainer"></div>
+      <div id="injectUserProfile"></div>
+      <div id="injectPostWriter"></div>
+      <div id="injectPost"></div>
+      <div id="userPostsContainer" class="user-posts_container"></div>
+      <span id="userPostsStorage" class="user-posts_storage"></span>
+    </main>
+  </body>
+</html>
+
+<script type="module">
+  import { startExploreRedirectionTimer } from "/shared/utils/user-redirection.js";
+  startExploreRedirectionTimer();
+</script>

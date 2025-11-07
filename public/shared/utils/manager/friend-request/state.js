@@ -1,0 +1,16 @@
+export const friendRequestState = {
+  manifestPromise: null,
+  pendingQueue: [],
+  scheduledId: null,
+  timerRunning: false,
+  timerLastStart: 0,
+  activeElapsedMs: 0,
+  friendsCount: 0,
+  initialized: false,
+  simulationStarted: false,
+  stopAt: 0,
+  userKey: null,
+  ui: null,
+  timestampEl: null,
+  recentlyHidden: new Map(),
+};

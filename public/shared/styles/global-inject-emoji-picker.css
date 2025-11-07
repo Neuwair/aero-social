@@ -1,0 +1,37 @@
+.emoji-picker_wrapper {
+  display: none;
+  z-index: 100;
+}
+.emoji-picker_container {
+  display: flex;
+}
+.emoji-picker_container i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: ease-in-out 330ms;
+}
+.emoji_storage {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 2.5rem;
+}
+.emoji_wrapper {
+  display: flex;
+}
+@media screen and (min-width: 1000px) {
+  .emoji-picker_wrapper {
+    display: flex;
+  }
+}
+/* Global Styles */
+.emoji-picker_container i {
+  color: #f0f0f0;
+}
+.emoji-picker_container i:hover {
+  color: rgba(0, 153, 255, 0.9);
+}
+.emoji_storage {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.8);
+}

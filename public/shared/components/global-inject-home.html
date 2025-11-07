@@ -1,0 +1,197 @@
+<div class="home-display">
+  <div
+    id="aero-alert-popup"
+    class="aero-alert-popup"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+  >
+    <div class="aero-alert-overlay"></div>
+    <div class="aero-alert-window" role="document" tabindex="0">
+      <header class="aero-alert-header" id="aero-alert-title">
+        AeroSocial was created by Neuwair
+      </header>
+      <div class="aero-alert-body">
+        This is a project technical concept website, not meant to be a fully
+        functional social network, thank you for understanding.
+      </div>
+      <div class="aero-alert-timer" aria-hidden="true">
+        <div class="aero-alert-timer-bar"></div>
+      </div>
+    </div>
+  </div>
+  <div id="aero-loading-popup" class="aero-alert-popup" aria-hidden="true" style="display:none; z-index:10001;">
+    <div class="aero-alert-overlay"></div>
+    <div class="aero-alert-window" role="document" tabindex="0" style="max-width:240px; text-align:center;">
+      <div class="aero-alert-body">Loading</div>
+      <div class="aero-alert-spinner" aria-hidden="true"></div>
+    </div>
+  </div>
+  <div class="landing_wrapper">
+    <h1>A Sempiternal Connection</h1>
+    <p>
+      Your gateway to seamless communication, immersive interactions, and a
+      community that evolves with you.
+    </p>
+  </div>
+  
+  <div class="first-box_wrapper">
+    <div class="form_container">
+      <form id="joinForm" class="join-form" novalidate>
+        <div class="form-title_container">
+          <h1>Join AeroSocial</h1>
+        </div>
+        <div class="form-data-user">
+          <label for="usernameInput" class="label-item"
+            >Enter your username</label
+          >
+          <input
+            id="usernameInput"
+            name="username"
+            class="input-item"
+            minlength="4"
+            maxlength="10"
+            placeholder="Enter your username..."
+            autocomplete="username"
+            required
+          />
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <div id="usernameAlert" class="alert-item"></div>
+          </div>
+          <label for="emailInput" class="label-item">Enter your email</label>
+          <input
+            id="emailInput"
+            name="email"
+            class="input-item"
+            type="email"
+            maxlength="50"
+            placeholder="Enter your email..."
+            autocomplete="email"
+            required
+          />
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <div id="emailAlert" class="alert-item"></div>
+          </div>
+        </div>
+        <div class="form-data-password">
+          <label for="passwordInput" class="label-password-item"
+            >Enter your password</label
+          >
+          <div class="password-accept-background">
+            <input
+              type="password"
+              id="passwordInput"
+              class="input-item"
+              minlength="8"
+              maxlength="30"
+              placeholder="Enter your password..."
+              autocomplete="new-password"
+              required
+            /><i class="fas fa-eye-slash"></i>
+          </div>
+          <label for="confirmPasswordInput" class="label-password-item"
+            >Confirm your password</label
+          >
+          <div class="password-confirm-background">
+            <input
+              type="password"
+              id="confirmPasswordInput"
+              class="input-item"
+              minlength="8"
+              maxlength="30"
+              placeholder="Confirm your password..."
+              autocomplete="new-password"
+              required
+            /><i class="fas fa-eye-slash"></i>
+          </div>
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <div id="passwordAlert" class="alert-item"></div>
+          </div>
+        </div>
+        <div class="form-data-buttons">
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <button id="joinBtn" class="form-btn" type="submit">Join</button>
+          </div>
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <button id="showLoginBtn" class="form-btn" type="button">I already have an account</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="form_container" style="display:none;" id="loginFormContainer">
+      <form id="loginForm" class="join-form" novalidate>
+        <div class="form-title_container">
+          <h1>Log-in to AeroSocial</h1>
+        </div>
+        <div class="form-data-user">
+          <label for="loginEmailInput" class="label-item">Enter your email</label>
+          <input
+            id="loginEmailInput"
+            name="email"
+            class="input-item"
+            type="email"
+            maxlength="50"
+            placeholder="Enter your email..."
+            autocomplete="email"
+            required
+          />
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <div id="loginEmailAlert" class="alert-item" data-alert="email"></div>
+          </div>
+        </div>
+        <div class="form-data-password">
+          <label for="loginPasswordInput" class="label-password-item">Enter your password</label>
+          <div class="password-accept-background">
+            <input
+              type="password"
+              id="loginPasswordInput"
+              name="password"
+              class="input-item"
+              minlength="8"
+              maxlength="30"
+              placeholder="Enter your password..."
+              autocomplete="current-password"
+              required
+            /><i class="fas fa-eye-slash"></i>
+          </div>
+          <label for="loginConfirmPasswordInput" class="label-password-item">Confirm your password</label>
+          <div class="password-confirm-background">
+            <input
+              type="password"
+              id="loginConfirmPasswordInput"
+              name="confirmPassword"
+              class="input-item"
+              minlength="8"
+              maxlength="30"
+              placeholder="Confirm your password..."
+              autocomplete="current-password"
+              required
+            /><i class="fas fa-eye-slash"></i>
+          </div>
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <div id="loginPasswordAlert" class="alert-item" data-alert="password"></div>
+          </div>
+        </div>
+        <div class="form-data-buttons">
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <button id="loginBtn" class="form-btn" type="submit">Login</button>
+          </div>
+          <div class="buttons-reflection">
+            <div class="buttons-inner-light"></div>
+            <button id="showJoinBtn" class="form-btn" type="button">Create a new account</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>

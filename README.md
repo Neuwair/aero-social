@@ -1,3 +1,6 @@
+##Notice
+AeroSocial's development is currently on hold, I'm planning a NEW roadmap to improve this project, cheers.
+
 # AeroSocial
 Created by Neuwair | 🍋 Illustrator and Programmer | イラストレーター兼プログラミング学生
 - [Twitter](https://x.com/neuwair) | [Pixiv](https://www.pixiv.net/en/users/102019144) | [Insta](https://www.instagram.com/neuwair404) | [YouTube](https://www.youtube.com/@Neuwair)

@@ -6,14 +6,8 @@
   directory = "netlify/functions"
 
 [dev]
-  port = 8888
+  port = 3000
   publish = "public"
-
-# Static assets will be served normally, only HTML routes get redirected
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 [[headers]]
   for = "/*"
